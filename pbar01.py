@@ -22,23 +22,39 @@ for item in questions:
     raw_input = ("do you like a %s drink?") % item
     if item == "yes":
         drink.append()
-'''
+
 def pref(questions):
     likes = []
     raw_input("salty?")
-    if yes:
-        likes.append()
-    raw_input("strong")
-    if yes:
-        likes.append()
+    if "yes":
+        likes.append(questions)
+    raw_input("strong?")
+    if "yes":
+        likes.append(questions)
     raw_input("bitter?")
-    if yes:
-        likes.append()
+    if "yes":
+        likes.append(questions)
     raw_input("sweet?")
-    if yes:
-        likes.append()
+    if "yes":
+        likes.append(questions)
     raw_input("fruity?")
-    if yes:
-        likes.append()
+    if "yes":
+        likes.append(questions)
+    print likes
     return likes
-    
+
+pref(questions)
+'''
+
+def bartender():
+    '''makes the drink profile'''    
+    for key,value in questions.items():
+        #raw_input("would you like your drink {}?".format(key,questions))
+        drink = []
+        raw_input("would you like your drink {}?".format(key,questions))
+        if key == "yes":
+            drink.append(value)
+        print drink
+
+
+bartender()
