@@ -15,10 +15,30 @@ ingredients = {
 }
 
 #def bartender ():
-    
+'''   
 for item in questions:
     #raw_input = ("do you like % ?")%s(x)
     drink = []
     raw_input = ("do you like a %s drink?") % item
     if item == "yes":
         drink.append()
+'''
+def pref(questions):
+    likes = []
+    raw_input("salty?")
+    if yes:
+        likes.append()
+    raw_input("strong")
+    if yes:
+        likes.append()
+    raw_input("bitter?")
+    if yes:
+        likes.append()
+    raw_input("sweet?")
+    if yes:
+        likes.append()
+    raw_input("fruity?")
+    if yes:
+        likes.append()
+    return likes
+    
