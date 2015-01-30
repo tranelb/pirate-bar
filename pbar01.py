@@ -48,11 +48,11 @@ pref(questions)
 
 def bartender():
     '''makes the drink profile'''    
-    for key,value in questions.items():
+    for key,value in questions:
         #raw_input("would you like your drink {}?".format(key,questions))
-        drink = []
-        raw_input("would you like your drink {}?".format(key,questions))
-        if key == "yes":
+        drink = [t]
+        t = raw_input("would you like your drink {}?".format(key,questions))
+        if t == "yes":
             drink.append(value)
         print drink
 
